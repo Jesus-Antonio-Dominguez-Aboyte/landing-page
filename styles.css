@@ -150,6 +150,86 @@ hr {
   margin: 0 auto;
 }
 
+/* hero image 2 */
+.hero-image2 {
+  min-height: 35vh;
+  background-image: url(../img/nsh2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: scroll;
+  background-attachment: fixed;
+  color: white;
+}
+
+.hero-image2 div {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.777);
+}
+.hero-image2 h1 {
+  font-size: 3vw;
+  font-style: italic;
+  width: 50%;
+  margin: 0;
+}
+.hero-image2 h2 {
+  font-size: 2vw;
+  font-style: italic;
+  width: 50%;
+  margin: 0;
+}
+
+/*galeria de servicios*/
+
+.galeria {
+  display: flex;
+
+  width: 1350px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.galeria img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.galeria img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/* contenido del footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 10vh;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.777);
+}
+
+.footer .contenido-1 {
+  padding: 2px;
+  text-align: center;
+  font-size: medium;
+  font-family: sans-serif;
+  color: white;
+}
+
 @media (max-width: 680px) {
   header {
     flex-direction: column;
