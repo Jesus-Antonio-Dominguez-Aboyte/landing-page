@@ -52,11 +52,10 @@ nav a:hover {
 /* fpto portada de article1 hero image */
 .hero-image {
   min-height: 80vh;
-  background-image: url(/img/port1.png);
+  background-image: url(img/port1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   background-attachment: scroll;
   background-attachment: fixed;
   color: white;
@@ -147,7 +146,7 @@ nav a:hover {
 /* hero image 2 */
 .hero-image2 {
   min-height: 25vh;
-  background-image: url(/img/nsh2.jpg);
+  background-image: url(img/nsh2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
