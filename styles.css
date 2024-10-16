@@ -280,18 +280,735 @@ nav a:hover {
   color: white;
 }
 
-@media (max-width: 680px) {
+/* responsive design */
+@media (max-width: 600px) {
   header {
     flex-direction: column;
   }
 
   .logo img {
-    height: 100px;
+    height: 70px;
     margin: auto;
     border-radius: 25%;
   }
 
   nav {
-    padding: 10px 0px;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
   }
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .hero-image {
+    min-height: 20vh;
+    background-image: url(img/port1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center -100%;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .hero-image div {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.777);
+  }
+  .hero-image h2 {
+    font-size: 3vw;
+    font-style: italic;
+    width: 80%;
+  }
+
+  /* PARTE DEL CONTENEDOR1 quienes somos*/
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+  }
+
+  .container1 .articulo1 h1 {
+    margin: 0 30px;
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+
+  .container1 .articulo1 p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 50px;
+    padding: 10px;
+  }
+
+  .container1 .img1 img {
+    margin-right: 2px;
+    height: 150px;
+    width: 150px;
+  }
+
+  /* PARTE DE MISION Y VISION*/
+
+  .mision {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .msn img {
+    margin: 5px;
+    border-radius: 80px 20px;
+    height: 150px;
+    width: 250px;
+    margin: 0 150px 0 150px;
+    box-shadow: -10px 13px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+
+  .tmsn {
+    width: inherit;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .tmsn p {
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .vision {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .vsn img {
+    background-color: rgba(31, 200, 8, 1);
+    margin: 50px;
+    border-radius: 80px 20px;
+    height: 150px;
+    width: 250px;
+
+    margin: 0 150px 0 150px;
+
+    box-shadow: -10px 13px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+
+  .vsn {
+    width: inherit;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .vsn p {
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  /* hero image 2 */
+  .hero-image2 {
+    min-height: 20vh;
+    background-image: url(img/nsh2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: scroll;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .hero-image2 div {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.777);
+  }
+  .hero-image2 h1 {
+    font-size: 3vw;
+    font-style: italic;
+    width: 50%;
+    margin: 0;
+  }
+  .hero-image2 h2 {
+    font-size: 2vw;
+    font-style: italic;
+    width: 50%;
+    margin: 0;
+  }
+
+  /*galeria de servicios*/
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+
+  .galeria img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  /* contenido de contacto */
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    padding: 10px;
+  }
+
+  .contacto .cont-1 h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+
+  .contacto .cont-1 p {
+    width: inherit;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .cont-2 iframe {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 844px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo img {
+    height: 70px;
+    margin: auto;
+    border-radius: 25%;
+  }
+
+  nav {
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .hero-image {
+    min-height: 20vh;
+    background-image: url(img/port1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center -100%;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .hero-image div {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.777);
+  }
+  .hero-image h2 {
+    font-size: 3vw;
+    font-style: italic;
+    width: 80%;
+  }
+
+  /* PARTE DEL CONTENEDOR1 quienes somos*/
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+  }
+
+  .container1 .articulo1 h1 {
+    margin: 0 30px;
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+
+  .container1 .articulo1 p {
+    text-align: justify;
+    font-size: 20px;
+
+    margin: 0 50px;
+    padding: 10px;
+  }
+
+  .container1 .img1 img {
+    margin-right: 2px;
+    height: 150px;
+    width: 150px;
+  }
+
+  /* PARTE DE MISION Y VISION*/
+
+  .mision {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .msn img {
+    margin: 5px;
+    border-radius: 80px 20px;
+    height: 150px;
+    width: 250px;
+    margin: 0 150px 0 150px;
+    box-shadow: -10px 13px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+
+  .tmsn {
+    width: inherit;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .tmsn p {
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .vision {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .vsn img {
+    background-color: rgba(31, 200, 8, 1);
+    margin: 50px;
+    border-radius: 80px 20px;
+    height: 150px;
+    width: 250px;
+
+    margin: 0 150px 0 150px;
+
+    box-shadow: -10px 13px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+
+  .vsn {
+    width: inherit;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .vsn p {
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  /* hero image 2 */
+  .hero-image2 {
+    min-height: 20vh;
+    background-image: url(img/nsh2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: scroll;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .hero-image2 div {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.777);
+  }
+  .hero-image2 h1 {
+    font-size: 3vw;
+    font-style: italic;
+    width: 50%;
+    margin: 0;
+  }
+  .hero-image2 h2 {
+    font-size: 2vw;
+    font-style: italic;
+    width: 50%;
+    margin: 0;
+  }
+
+  /*galeria de servicios*/
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+
+  .galeria img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  /* contenido de contacto */
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    padding: 10px;
+  }
+
+  .contacto .cont-1 h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+
+  .contacto .cont-1 p {
+    width: inherit;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .cont-2 iframe {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .footer .contenido-1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    flex-direction: flex;
+  }
+
+  .logo img {
+    height: 70px;
+    margin: auto;
+    border-radius: 25%;
+  }
+
+  nav {
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    font-size: 20px;
+  }
+
+  .hero-image {
+    min-height: 25vh;
+    background-image: url(img/port1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center -100%;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .hero-image div {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.777);
+  }
+  .hero-image h2 {
+    font-size: 3vw;
+    font-style: italic;
+    width: 80%;
+  }
+
+  /* PARTE DEL CONTENEDOR1 quienes somos*/
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .container1 .articulo1 h1 {
+    margin: 0 50px;
+    font-size: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+
+  .container1 .articulo1 p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 50px;
+    padding: 10px;
+  }
+
+  .container1 .img1 img {
+    margin-top: 12px;
+    height: 180px;
+    width: 180px;
+  }
+
+  /* PARTE DE MISION Y VISION*/
+
+  .mision {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .msn img {
+    margin: 5px;
+    border-radius: 80px 20px;
+    height: 250px;
+    width: 350px;
+    margin: 0 100px 0 100px;
+    box-shadow: -10px 13px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+
+  .tmsn {
+    width: inherit;
+    text-align: center;
+    padding: 1px;
+    margin: 0 auto;
+  }
+
+  .tmsn p {
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .vision {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .vsn img {
+    margin: 50px;
+    border-radius: 80px 20px;
+    height: 250px;
+    width: 350px;
+    margin: 0 100px 0 100px;
+    box-shadow: -10px 13px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+
+  .vsn {
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .vsn p {
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  /* hero image 2 */
+  .hero-image2 {
+    min-height: 20vh;
+    background-image: url(img/nsh2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-attachment: scroll;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .hero-image2 div {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.777);
+  }
+  .hero-image2 h1 {
+    font-size: 3vw;
+    font-style: italic;
+    width: 50%;
+    margin: 0;
+  }
+  .hero-image2 h2 {
+    font-size: 2vw;
+    font-style: italic;
+    width: 50%;
+    margin: 0;
+  }
+
+  /*galeria de servicios*/
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+
+  .galeria img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  /* contenido de contacto */
+  .contacto {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    padding: 10px;
+  }
+
+  .contacto .cont-1 h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+  }
+
+  .contacto .cont-1 p {
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .cont-2 iframe {
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+.footer .contenido-1 {
+  font-size: 0.9rem;
 }
